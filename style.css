@@ -1,0 +1,127 @@
+/* ALL IMAGE STYLES */
+img{
+  box-shadow: 2px 2px 4px #444444;
+  animation: image-glow linear 2.5s infinite;
+}
+/* MENU TEXT STYLES: HOME , POST , BIOGRAPHY , BLOG , CONTACT*/
+#my-size{
+  font-size: 1em;
+  animation: text-glow linear 2.5s infinite;
+}
+/* MENU ICON STYLES: FACEBOOK , TWITTER , INSTAGRAM , GMAIL LOGO*/
+#my-icon-size{
+  font-size:1.7em;
+}
+.facebook:hover{
+  color:#3b5998;
+  box-shadow: 2px 2px 30px #0000ff;
+}
+.twitter:hover{
+  color:#00acee;
+  box-shadow: 2px 2px 30px #00acee;
+}
+.instagram:hover{
+  color:#bc2a8d;
+  box-shadow: 2px 2px 30px #bc2a8d;
+}
+.gmail:hover{
+  color:#d44638;
+  box-shadow: 2px 2px 30px #d44638;
+}
+@keyframes image-glow{
+  0%{box-shadow: 2px 2px 4px #fb0094;}
+  10%{box-shadow: 2px 2px 4px #0000ff;}
+  20%{box-shadow: 2px 2px 4px #00ff00;}
+  30%{box-shadow: 2px 2px 4px #ffff00;}
+  40%{box-shadow: 2px 2px 4px #ff0000;}
+  50%{box-shadow: 2px 2px 4px #fb0094;}
+  60%{box-shadow: 2px 2px 4px #0000ff;}
+  70%{box-shadow: 2px 2px 4px #00ff00;}
+  80%{box-shadow: 2px 2px 4px #ffff00;}
+  90%{box-shadow: 2px 2px 4px #ff0000;}
+  100%{box-shadow: 2px 2px 4px #fb0094;}
+}
+@keyframes text-glow{
+  0%{text-shadow: 1px 1px 1px #fb0094;}
+  10%{text-shadow: 1px 1px 1px #0000ff;}
+  20%{text-shadow: 1px 1px 1px #00ff00;}
+  30%{text-shadow: 1px 1px 1px #ffff00;}
+  40%{text-shadow: 1px 1px 1px #ff0000;}
+  50%{text-shadow: 1px 1px 1px #fb0094;}
+  60%{text-shadow: 1px 1px 1px #0000ff;}
+  70%{text-shadow: 1px 1px 1px #00ff00;}
+  80%{text-shadow: 1px 1px 1px #ffff00;}
+  90%{text-shadow: 1px 1px 1px #ff0000;}
+  100%{text-shadow: 1px 1px 1px #fb0094;}
+}
+
+
+
+
+.loader
+{
+ position: absolute;
+ left:25%;
+ top:69%;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ background: linear-gradient(#00ff00,#ffff00,#ff00e0,#0000ff);
+ animation: rotate 0.5s linear infinite;
+}
+@keyframes rotate
+{
+ 0%
+ {
+  transform: rotate(0deg);
+ }
+ 100%
+ {
+  transform: rotate(360deg);
+ }
+}
+.loader span
+{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ border-radius: 50%;
+ background: linear-gradient(#00ff00,#ffff00,#ff00e0,#0000ff);
+}
+.loader span:nth-child(1)
+{
+ filter: blur(5px);
+}
+.loader span:nth-child(2)
+{
+ filter: blur(10px);
+}
+.loader span:nth-child(3)
+{
+ filter: blur(25px);
+}
+.loader span:nth-child(4)
+{
+ filter: blur(50px);
+}
+.loader:after
+{
+ content: '';
+ position: absolute;
+ top: 10px;
+ Left: 10px;
+ right: 10px;
+ bottom: 10px;
+ background: #240229;
+ border-radius: 50%;
+}
+
+/* THE IMAGE BETWEEN THE LOADER */
+#glow-circle-logo{
+  position: absolute;
+  bottom:17.7%;
+  left:29%;
+  height:79px;
+  width:79px;
+  border-radius: 50%;
+}
