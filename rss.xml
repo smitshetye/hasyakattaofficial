@@ -1,4 +1,3 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
 <channel>
 <title>
@@ -42,7 +41,7 @@ This XML file does not appear to have any style information associated with it. 
 <description>
 <![CDATA[ <div><div style="left: 0; width: 100%; height: 1688px; position: relative;"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOsD3YjtWZ6KY7tdtV90vqo0ZU8q824Kdx3IDDjwqPv1ZGLA/viewform?usp=send_form&embedded=true&usp=embed_googleplus" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div></div> ]]>
 </description>
-<link>https://docs.google.com/forms/d/e/1FAIpQLSfOsD3YjtWZ6KY7tdtV90vqo0ZU8q824Kdx3IDDjwqPv1ZGLA/viewform?usp=send_form&embedded=true</link>
+<link>https://docs.google.com/forms/d/e/1FAIpQLSfOsD3YjtWZ6KY7tdtV90vqo0ZU8q824Kdx3IDDjwqPv1ZGLA/viewform?usp=send_form&amp;embedded=true=true</link>
 <guid isPermaLink="false">ae8926dc5fce160c12417f031a5fc33d</guid>
 <dc:creator>
 <![CDATA[ Google Docs ]]>
