@@ -14,7 +14,7 @@ else
 {
     mail("hasyakattaforyou@gmail.com", "Hasya Katta Message", $message, "From: $firstname <$email>");
     echo "<script type='text/javascript'>alert('Your Message has been sent successfully');
-    window.history.log(-1)
+    window.history.log(-1);
     </script>";
 }
 
