@@ -3,7 +3,7 @@ img{
   box-shadow: 2px 2px 4px #444444;
   animation: image-glow linear 2.5s infinite;
 }
-/* MENU TEXT STYLES: HOME , POST , BIOGRAPHY , OFFICIAL APP , CONTACT*/
+/* MENU TEXT STYLES: HOME , POST , BIOGRAPHY , OFFICIAL APP , CONTACT , TWITTER , CORONA VIRUS STATS*/
 #my-size{
   font-size: 1em;
   animation: text-glow linear 2.5s infinite;
