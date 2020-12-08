@@ -57,6 +57,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('config', 'UA-175594152-1');
 </script>
 	  
+<!-- kp -->
+  <script src="https://apis.google.com/js/api.js"></script>
+<script>
+function start() {
+    // 2. Initialize the JavaScript client library.
+    gapi.client.init({
+        'apiKey': 'AIzaSyC6Qas_HsYdbTTSxy1WBjJzbK6eVvc6YwA',
+        // clientId and scope are optional if auth is not required.
+        'clientId': '335113149100-as9min0u7lb06kbbu2vdegkm4h37hvfp.apps.googleusercontent.com',
+        'scope': 'profile',
+    }).then(function() {
+        // 3. Initialize and make the API request.
+        return gapi.client.request({
+            'path': 'https://people.googleapis.com/v1/people/me?requestMask.includeField=person.names',
+        })
+    }).then(function(response) {
+        console.log(response.result);
+    }, function(reason) {
+        console.log('Error: ' + reason.result.error.message);
+    });
+};
+// 1. Load the JavaScript client library.
+gapi.load('client', start);
+</script>
+	  
 <!-- Schema Markup 1 -->
 <script type="application/ld+json">
 {
@@ -511,7 +536,21 @@ The app should safely install.</p></br>
 	<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="hasyakattaofficial"><a class="LI-simple-link" href='https://in.linkedin.com/in/hasyakattaofficial?trk=profile-badge'>Hasya Katta</a></div>
 	<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="smitshetye"><a class="LI-simple-link" href='https://in.linkedin.com/in/smitshetye?trk=profile-badge'>Smit Shetye</a></div>
   </main>
-
+<!-- kp1 -->
+    <script>
+    var service_url = 'https://kgsearch.googleapis.com/v1/entities:search';
+    var params = {
+        'query': 'Hasya Katta Official',
+        'limit': 10,
+        'indent': true,
+        'key' : '<AIzaSyC6Qas_HsYdbTTSxy1WBjJzbK6eVvc6YwA>',
+    };
+    $.getJSON(service_url + '?callback=?', params, function(response) {
+        $.each(response.itemListElement, function(i, element) {
+            $('<div>', {text:element['result']['name']}).appendTo(document.body);
+        });
+    });
+</script>
 <!-- .site-wrap -->
  
 
